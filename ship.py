@@ -1,8 +1,12 @@
+from utils import Position
 class Ship:
-    def __init__(self, ship_type, width, height):
+    def __init__(self, ship_type, width, height, postion:Position):
         self.ship_type = ship_type
         self.size = width * height
-
+        self.width = width
+        self.height = height
+        self.position = postion
+        
     def reduce_health(self, grid, position):
         """Removes a cell from the grid and reduces the ship size."""
         self.size -= 1

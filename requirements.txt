@@ -1,0 +1,2 @@
+pylint  # Optional for linting
+pytest  # Optional for testing

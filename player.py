@@ -17,7 +17,7 @@ class Player:
         self.ship_count = ship_count
 
     def place_ships(self, width, height, position, ship_type):
-        ship = Ship(ship_type, width, height)
+        ship = Ship(ship_type, width, height, position)
         self.battle_area.place_ship(width, height, position, ship)
 
     def set_firing_sequence(self, sequence):

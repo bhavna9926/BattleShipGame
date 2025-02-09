@@ -1,3 +1,5 @@
+import os
+os.environ['TK_SILENCE_DEPRECATION'] = '1'
 from logger import logging
 from input_validator import ValidateInput
 from game_controller import GameController
@@ -10,7 +12,7 @@ def main():
 
         if input_class.get_valid_input():
             # Initialize players
-            player_names = ['player-1', 'player-2']
+            player_names = ['Player-1', 'Player-2']
             input_class.set_players(player_names)
             
             # Configure the game setup
